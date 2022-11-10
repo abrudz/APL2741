@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /> 
+    <title>APL2741 Unicode - APL font based on the font from Adrian Smith</title>
+    <style>
+      @font-face {
+        font-family: 'APL2741';
+        src: url('APL2741 Unicode.ttf');
+      }
+      * {
+        font-family: 'APL2741';
+        font-weight: unset;
+      }
+      h1>span {
+        float: right;
+      }
+      h1>span>a {
+        text-decoration: none;
+        color: #ea4aaa;
+      }
+      body {
+        font-size: 125%;
+        line-height: 1;
+      }
+      blockquote {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        text-align: justify;
+        font-size: 125%;
+      }
+      sup {
+        font-size: 50%;
+      }
+      textarea {
+        width: 100%;
+        resize: vertical;
+        min-height: 4em;
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>APL2741 Unicode<sup> <a href="APL2741 Unicode.ttf">download</a></sup><span><sup><a href="https://github.com/abrudz/APL2741">source</a> </sup><a href="https://github.com/sponsors/abrudz" title="Sponsor">♥</a></span></h1>
+    <p>APL font based on Adrian Smith's IBM Selectric <a href="https://apl385.com/fonts/index.htm">APL2741</a> golf-ball font.</p>
+    <blockquote>
+      <textarea autofocus placeholder="Try it yourself ― type here!" spellcheck="false"></textarea>
+    </blockquote>
+    <p>Supports most special characters used by popular APL implementations:</p>
+    <blockquote style="word-break: break-all;">+-×÷⌈⌊*⍟|!○~∨∧⍱⍲&lt;≤=≥>≠.@≡≢⍴,⍪⍳↑↓?⍒⍋⍉⌽⊖∊⊥⊤⍎⍕⌹⊂⊃∪∩⍷⌷∘→←⎕⍞/⌿\⍀¨⍣&amp;⍨⌶#⊆⍥⊣⊢⍠⍤⌸⌺⍸()[];⍝⋄:⍬{}∇#⍺⍵⍶⍹"ᐵᑈ⍡⍁⌾⍢⍫$⍛⍧%⊇⍮⍭⊙⍦⍇⍈⍐⍗∥=</blockquote>
+    <p>And some additional mathematical and typographical symbols:</p>
+    <blockquote>‖°±∓·∵∉⊖⊛⋔`´¡¿¢£¤¥¶</blockquote>
+    <p>Single line drawing characters:</p>
+    <blockquote>┌─┬┐<br>
+               │ ││<br>
+               ├─┼┤<br>
+               └─┴┘</blockquote>
+    <p>The full Unicode APL range, including both uppercase and lowercase underscored alphabets, and as-of-yet unused symbols:</p>
+    <blockquote>ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ<br>ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ<br>⌻⌼⍁⍂⍃⍄⍅⍆⍊⍌⍍⍏⍑⍓⍔⍖⍘⍚⍯⍰</blockquote>
+    <p>Almost all Latin-1 accented letters:</p>
+    <blockquote style="word-break: break-all;">ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïñòóôõöøùú</blockquote>
+    <p>Sample APL code:</p>
+    <blockquote><pre>
+w←⊃(⊃0⍴⍵){                           ⍝┌┌─2─┐       monadic; use ↓
+    (e a)←|⍺                         ⍝├ 0 0 1 1 1  dyadic; use /
+    T←⌽⍣(0>⊃⌽⍺)                      ⍝└──→⍺⍺←─────┐
+    Pad←⍵⍵⍉(T⊣)⍪⍵⍪(T⊢)               ⍝ ┌⍺┐  ⌺     │
+    need←(1+e),1↓⍴⍵                  ⍝ ┌─────⍵⍵──┐┘
+    a=0:(1↓need⍴0↑⍵)Pad(1↓need⍴0↑⊢⍵) ⍝  0 0│1 2 3 4 5│0 0  Zero
+    a=1:(1↓need⍴1↑⍵)Pad(1↓need⍴1↑⊖⍵) ⍝  1 1│1 2 3 4 5│5 5  Replicate
+    a=2:(⊖¯1↓need⍴⊢⍵)Pad(¯1↓need⍴⊖⍵) ⍝  2 1│1 2 3 4 5│5 4  Reverse
+    a=3:(⊖⊢1↓need⍴⊢⍵)Pad(⊢1↓need⍴⊖⍵) ⍝  3 2│1 2 3 4 5│4 3  Mirror
+    a=4:(⊖¯1↓need⍴⊖⍵)Pad(¯1↓need⍴⊢⍵) ⍝  4 5│1 2 3 4 5│1 2  Wrap
+}(¯1⌽⍳≢⍴⍵)/(⌽extra,¨⍺⊣0),⊂⍵          ⍝     └────⍵────┘</pre></blockquote>
+    <p>Sample text:</p>
+    <blockquote>APL (named after the book A Programming Language) is a programming language developed in the 1960s by Kenneth E. Iverson. Its central datatype is the multidimensional array. It uses a large range of special graphic symbols to represent most functions and operators, leading to very concise code. It has been an important influence on the development of concept modeling, spreadsheets, functional programming, and computer math packages. It has also inspired several other programming languages.</blockquote>
+  </body>
+</html>
