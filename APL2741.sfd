@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1066650910
-ModificationTime: 1668048015
+ModificationTime: 1668049300
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -462,7 +462,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 48 24 10
+WinInfo: 8856 24 10
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 346030 173015 115343 461373 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -470,7 +470,7 @@ BeginChars: 65536 412
 
 StartChar: uni007F
 Encoding: 127 127 0
-AltUni2: 00001f.ffffffff.0 00001e.ffffffff.0 00001c.ffffffff.0 00001b.ffffffff.0 00001a.ffffffff.0 000019.ffffffff.0 000018.ffffffff.0 000017.ffffffff.0 000016.ffffffff.0 000015.ffffffff.0 000014.ffffffff.0 000013.ffffffff.0 000012.ffffffff.0 000011.ffffffff.0 000010.ffffffff.0 00000f.ffffffff.0 00000e.ffffffff.0 00000c.ffffffff.0 00000b.ffffffff.0 00000a.ffffffff.0 000007.ffffffff.0 000006.ffffffff.0 000005.ffffffff.0 000004.ffffffff.0 000003.ffffffff.0 000002.ffffffff.0 000001.ffffffff.0
+AltUni2: 000001.ffffffff.0 000002.ffffffff.0 000003.ffffffff.0 000004.ffffffff.0 000005.ffffffff.0 000006.ffffffff.0 000007.ffffffff.0 00000a.ffffffff.0 00000b.ffffffff.0 00000c.ffffffff.0 00000e.ffffffff.0 00000f.ffffffff.0 000010.ffffffff.0 000011.ffffffff.0 000012.ffffffff.0 000013.ffffffff.0 000014.ffffffff.0 000015.ffffffff.0 000016.ffffffff.0 000017.ffffffff.0 000018.ffffffff.0 000019.ffffffff.0 00001a.ffffffff.0 00001b.ffffffff.0 00001c.ffffffff.0 00001e.ffffffff.0 00001f.ffffffff.0
 Width: 600
 Flags: W
 LayerCount: 2
@@ -491,7 +491,7 @@ EndChar
 
 StartChar: uni001D
 Encoding: 29 29 1
-AltUni2: 000008.ffffffff.0 000000.ffffffff.0
+AltUni2: 000000.ffffffff.0 000008.ffffffff.0
 Width: 600
 Flags: W
 LayerCount: 2
@@ -519,7 +519,7 @@ EndChar
 
 StartChar: Ecircumflex
 Encoding: 202 202 3
-AltUni2: ffffffff.ffffffff.0 00000d.ffffffff.0 000009.ffffffff.0
+AltUni2: 000009.ffffffff.0 00000d.ffffffff.0 ffffffff.ffffffff.0
 Width: 600
 UnlinkRmOvrlpSave: 1
 Flags: W
@@ -12119,17 +12119,13 @@ SplineSet
  475 408 l 2,31,32
  500 408 500 408 500 381 c 256,33,34
  500 354 500 354 424 353 c 0,0,1
-385 247 m 0,35,36
- 346 247 346 247 277 272 c 1024,37,38
-279 221 m 0,39,40
- 346 197 346 197 383 197 c 1024,41,42
-301 -105 m 0,43,44
- 276 -105 276 -105 276 -76 c 2,45,-1
- 276 592 l 2,46,47
- 276 616 276 616 302 616 c 0,48,49
- 324 616 324 616 324 592 c 2,50,-1
- 324 -78 l 2,51,52
- 324 -105 324 -105 301 -105 c 0,43,44
+301 -105 m 0,35,36
+ 276 -105 276 -105 276 -76 c 2,37,-1
+ 276 592 l 2,38,39
+ 276 616 276 616 302 616 c 0,40,41
+ 324 616 324 616 324 592 c 2,42,-1
+ 324 -78 l 2,43,44
+ 324 -105 324 -105 301 -105 c 0,35,36
 EndSplineSet
 EndChar
 
